@@ -56,4 +56,6 @@ def run_raffle():
     customers = get_customers_from_file("customers.txt")
     pick_winner(customers)
 
-run_raffle()
+# Will only run when file is run directly
+if __name__ == '__main__':
+    run_raffle()
